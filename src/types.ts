@@ -10,6 +10,11 @@ export interface SpinUpOptions {
    */
   intervalMinutes: number;
 
+   /**
+   * Interval in minutes between pings during high demand 
+   */
+   intervalMinutesOnTraffic?: number;
+
   /**
    * Optional callback function to handle successful pings
    */
