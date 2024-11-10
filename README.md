@@ -2,8 +2,12 @@
 
 Keep your server awake and prevent it from spinning down due to inactivity! Perfect for free-tier hosting platforms like Render, Heroku, etc.
 
-[![NPM Version][npm-image]][npm-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+[![NPM Version](https://img.shields.io/npm/v/spin-up-ping)](https://www.npmjs.com/package/spin-up-ping)
+[![GitHub Issues](https://img.shields.io/github/issues/Muhsin-42/spin-up-ping)](https://github.com/Muhsin-42/spin-up-ping/issues)
+[![License](https://img.shields.io/npm/l/spin-up-ping)](https://github.com/Muhsin-42/spin-up-ping/blob/main/LICENSE)
+
+<!-- [![Downloads](https://img.shields.io/npm/dt/spin-up-ping)](https://www.npmjs.com/package/spin-up-ping) -->
+<!-- [![GitHub Stars](https://img.shields.io/github/stars/Muhsin-42/spin-up-ping)](https://github.com/Muhsin-42/spin-up-ping/stargazers) -->
 
 ## Why spin-up-ping? 🤔
 
@@ -76,37 +80,37 @@ interface PingKeeperOptions {
 - `start()`: Start the ping service
 - `stop()`: Stop the ping service
 
-## Debug Logging 🐛
+## Common Use Cases 🎯
 
-This package uses the `debug` module. To enable debug logs:
+1. **Free Hosting Services**
 
-```bash
-# In Node.js
-DEBUG=server-ping-keeper node your-app.js
+   - Prevent Render, Railway.app etc from sleeping
 
-# In browsers
-localStorage.debug = 'server-ping-keeper'
-```
+2. **Development & Testing**
+   - Keep development servers active
+   - Monitor server health
 
-## Best Practices 🎯
+## Best Practices 💡
 
 1. Set interval slightly lower than your hosting platform's timeout
-2. Consider error handling for network issues
+2. Implement error handling for network issues
 3. Enable debug logging during development
 4. Use environment variables for server URLs
 
-## License 📄
-
-ISC © [Muhsin Abdul Nissar]
-
 ## Contributing 🤝
 
-1. Fork it
-2. Create your feature branch (`git checkout -b feature/awesome`)
-3. Commit your changes (`git commit -am 'Add awesome feature'`)
-4. Push to the branch (`git push origin feature/awesome`)
-5. Create a new Pull Request
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-[npm-image]: https://img.shields.io/npm/v/spin-up-ping.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/spin-up-ping
-[npm-downloads]: https://img.shields.io/npm/dm/spin-up-ping.svg?style=flat-square
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License 📄
+
+ISC © [Muhsin Abdul Nissar](https://github.com/Muhsin-42)
+
+## Support ⭐
+
+If you found this package helpful, please consider giving it a star on GitHub!
