@@ -37,9 +37,9 @@ pnpm add spin-up-ping
 ## Usage 💻
 
 ```typescript
-import {ServerPingKeeper} from "spin-up-ping";
+import {SpinUp} from "spin-up-ping";
 
-const keeper = new ServerPingKeeper({
+const pinger = new SpinUp({
   url: "https://your-server.com", // Your server URL
   intervalMinutes: 5, // Minimum 5 minutes
   onSuccess: (response) => {
@@ -53,10 +53,10 @@ const keeper = new ServerPingKeeper({
 });
 
 // Start pinging
-keeper.start();
+pinger.start();
 
 // Stop pinging (if needed)
-keeper.stop();
+pinger.stop();
 ```
 
 ## API Reference 📚
@@ -66,7 +66,7 @@ keeper.stop();
 #### Constructor Options
 
 ```typescript
-interface PingKeeperOptions {
+interface SpinUpOptions {
   url: string; // URL to ping
   intervalMinutes: number; // Interval between pings (min: 5)
   onSuccess?: (response: any) => void; // Success callback

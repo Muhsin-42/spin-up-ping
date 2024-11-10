@@ -1,20 +1,20 @@
 import axios from "axios";
 import debug from "debug";
-import {PingKeeperOptions} from "./types";
+import {SpinUpOptions} from "./types";
 
 const log = debug("server-ping-keeper");
 
-export class ServerPingKeeper {
+export class SpinUp {
   // Changed the timer type to NodeJS.Timeout
   private timer: NodeJS.Timeout | null = null;
-  private readonly options: PingKeeperOptions;
+  private readonly options: SpinUpOptions;
 
   /**
    * Creates a new ServerPingKeeper instance
    * @param options Configuration options for the ping keeper
    * @throws {Error} If interval is less than 10 minutes
    */
-  constructor(options: PingKeeperOptions) {
+  constructor(options: SpinUpOptions) {
     if (options.intervalMinutes < 5) {
       throw new Error(
         "Interval must be at least 5 minutes to prevent server abuse"
@@ -69,4 +69,4 @@ export class ServerPingKeeper {
   }
 }
 
-export type {PingKeeperOptions} from "./types";
+export type {SpinUpOptions} from "./types";

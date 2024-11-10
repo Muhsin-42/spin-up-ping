@@ -1,4 +1,4 @@
-export interface PingKeeperOptions {
+export interface SpinUpOptions {
   /**
    * URL of the server to ping
    */
