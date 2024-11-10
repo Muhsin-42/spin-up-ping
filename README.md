@@ -18,7 +18,6 @@ Free-tier hosting services often spin down your server after a period of inactiv
 - 🔄 Configurable ping intervals (minimum 5 minutes)
 - 📊 Success and error callbacks for monitoring
 - 🛡️ Built-in abuse prevention
-- 🪵 Debug logging support
 - 💪 Written in TypeScript with full type support
 - 🎯 Zero dependencies (except axios for HTTP requests)
 
@@ -94,8 +93,7 @@ interface PingKeeperOptions {
 
 1. Set interval slightly lower than your hosting platform's timeout
 2. Implement error handling for network issues
-3. Enable debug logging during development
-4. Use environment variables for server URLs
+3. Use environment variables for server URLs
 
 ## Contributing 🤝
 
