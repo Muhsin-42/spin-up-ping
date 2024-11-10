@@ -1,0 +1,57 @@
+{
+  "name": "spin-up-ping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "Ping Me",
+    "ping-me",
+    "ping",
+    "server",
+    "server-up",
+    "keep-alive",
+    "prevent-spindown",
+    "spin-up-ping",
+    "keep alive",
+    "server uptime",
+    "ping server",
+    "stay awake",
+    "prevent sleep",
+    "server ping",
+    "wake server",
+    "keep server alive",
+    "auto ping",
+    "server uptime monitor",
+    "node ping",
+    "node keep alive",
+    "spin up server",
+    "prevent idle",
+    "ping interval"
+  ],
+  "author": "Muhsin Abdul Nissar",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "debug": "^4.3.4"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^22.9.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.0"
+  }
+}
